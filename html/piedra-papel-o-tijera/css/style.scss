@@ -1,0 +1,159 @@
+@import "_mixin.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    @include flex(space-between, stretch, column);
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    background-color: rgb(12, 12, 12);
+}
+
+header {
+    @include flex(center, center, column);    
+    background-color: rgb(255, 83, 218);
+    margin-bottom: 5%;
+    h1 {
+        font-family: Roboto;
+        font-size: 50px;
+        letter-spacing: 12px;
+        padding: 2.5%;
+        text-align: center;
+        text-transform: uppercase;
+        word-spacing: 20px;
+    }
+
+    img {
+        width: 50%;
+        padding: 2.5%;
+    }
+}
+
+.btn-opcion {
+    width: 25vw;
+    height: 25vw;
+    padding: 3%;
+    border-radius: 50%;
+    background-color: rgb(255, 83, 218);
+    border: none;
+    animation: padding 2s;
+
+    &:hover {
+        background-color: rgb(230, 132, 208);
+        padding: 1%;
+    }
+
+    &.seleccionado {
+        background-color: rgb(230, 132, 208);
+        border: solid 20px rgb(75, 7, 165);
+        padding: 1%;
+    }
+
+    &.piedra img {
+        width: 85%;
+        height: 90%;
+    }
+
+    &.papel img {
+        width: 80%;
+        height: 100%;
+    }
+
+    &.tijera img {
+        width: 100%;
+        height: 80%;
+    }
+    
+    &#eleccionMaquina {
+        background-color: rgb(75, 7, 165);
+        animation: none;
+        &:hover {
+            padding: 3%;
+        }
+        &.estado-inicial img {
+            width: 50%;
+            height: 80%;
+            animation: rotate 3s infinite;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+}
+
+#juego {
+    @include flex(center, center, column, 100px);
+    
+    .btn-container {
+        @include flex(center, center, row, 50px)
+    }
+
+    .btn {
+        @include flex(center, center, row, 10px);
+        background-color: rgb(75, 7, 165);
+        border: none;
+        border-radius: 50px;
+
+        &:hover {
+            background-color: rgb(130, 53, 231);
+        }
+
+        div.triangulo {
+            width: 0;
+            height: 0;
+            border-top: 25px solid transparent;
+            border-left: 50px solid rgb(255, 83, 218);
+            border-bottom: 25px solid transparent;
+            margin-left: 35px;
+        }
+
+        span {
+            font-size: 40px;
+            font-weight: 700;
+            margin: 30px;
+            color: rgb(255, 83, 218);
+        }
+    }
+}
+
+h2 {
+    font-size: 46px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+#resultado {
+    h2 {
+        color: rgb(125, 58, 212);
+        margin: 5%;
+    }
+
+    span {
+        color: rgb(255, 83, 218);
+        font-size: 46px;
+    }
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(255, 83, 218);
+    margin-top: 80px;
+    p {
+        text-align: center;
+        font-size: 22px;
+    }
+}

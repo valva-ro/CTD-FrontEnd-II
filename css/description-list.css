@@ -1,0 +1,50 @@
+dl dt a {
+    color: var(--primary);
+    transition: all .5s ease-in-out;
+}
+
+dl dt a:hover {
+    color: #a495e2;
+    padding-left: 4%;
+    transform: scale(1.1);
+}
+
+dl dt {
+    display: flex;
+    align-items: center;
+    margin-top: 7.5%;
+}
+
+dl dd {
+    padding: 2% 0;
+    margin-left: 6.5%;
+}
+
+dl:last-child {
+    margin-bottom: 7.5%;
+}
+
+dl dt a {
+    font-size: 2rem;
+}
+
+dl dd ul {
+    list-style: none;
+}
+
+dl dd, dl dd ul li, dl dd li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+dl dd, dl dd ul li {
+    color: rgb(212, 212, 212);
+    padding: .5% 0;
+}
+
+.icono {
+    font-size: 25px;
+    width: 10%;
+    padding: 2.5%;
+    filter: invert(.75) sepia(.3) saturate(280%) hue-rotate(110deg);
+}
