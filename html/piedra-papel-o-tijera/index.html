@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="shortcut icon" href="./img/piedraPapelTijera.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Piedra, papel o tijera</h1>
+        <img src="./img/logo.png" alt="Logo piedra papel o tijera">
+    </header>
+
+    <main>
+        <section id="juego">
+            <h2>Elegí una opción:</h2>
+            <div class="btn-container">
+                <button id="piedra" class="btn-opcion piedra"><img src="./img/piedra.png" alt="Piedra"></button>
+                <button id="papel" class="btn-opcion papel"><img src="./img/papel.png" alt="Piedra"></button>
+                <button id="tijera" class="btn-opcion tijera"><img src="./img/tijera.png" alt="Piedra"></button>
+            </div>
+            <div class="btn-container">
+                <button id="jugar" class="btn"><div class="triangulo"></div><span>Jugar</span></button>
+                <button id="reiniciar" class="btn"><span>Reiniciar</span></button>
+            </div>
+
+            <h2 id="strEleccionMaquina">La máquina esta pensando...</h2>
+            <button id="eleccionMaquina" class="btn-opcion estado-inicial"><img id="imgMaquina" src="./img/esperando.png" alt="Eleccion maquina"></button>
+        </section>
+
+        <section id="resultado">
+            <h2>Rondas jugadas: <span id="jugados"></span></h2>
+            <h2>Rondas ganadas: <span id="ganados"></span></h2>
+            <h2>Rondas empatadas: <span id="empatados"></span></h2>
+            <h2>Rondas perdidas: <span id="perdidos"></span></h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados a Valentina Varela Rodriguez ©</p>
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>

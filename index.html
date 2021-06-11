@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Proyectos hechos para Frontend II - CTD" />
+    <title>CTD - Frontend II</title>
+    <link rel="icon" href="img/laptop.svg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#">
+            <img src="img/logo-ctd.png" alt="Logo Certified Tech Developer">
+            <h1><span class="full">CTD - Frontend II</span><span class="not-full">FE2</span></h1>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#proyectos" class="nav-link">Proyectos</a>
+                    <ul class="hidden">
+                        <li><a href="#piedra-papel-o-tijera" class="nav-link">Piedra, papel o tijera</a></li>
+                        <li><a href="#casino" class="nav-link">Casino</a></li>
+                        <li><a href="#tema-oscuro" class="nav-link">Tema Oscuro</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#apuntes" class="nav-link">Apuntes</a>
+                    <ul class="hidden">
+                        <li><a href="#modulo-1" class="nav-link">Módulo 1</a></li>
+                        <li><a href="#modulo-2" class="nav-link">Módulo 2</a></li>
+                    </ul>
+                </li> 
+            </ul>
+            <a id="hamburger" href="#">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="img/foto-personal.png" alt="Foto Valentina Varela">
+            <div>
+                <h2>Valentina Varela Rodriguez</h2>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2><i class="fas fa-laptop"></i> Proyectos</h2>
+            <div class="flex-container">
+                <div class="fila">
+                    <dl>
+                        <dt id="piedra-papel-o-tijera">
+                            <img class="icono" src="img/piedraPapelTijera.png" alt="Piedra, papel o tijera">
+                            <a href="html/piedra-papel-o-tijera/" target="_blank"> Piedra, papel o tijera</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>Clase 2 - Manipulando elementos del DOM</li>
+                                <li>Aclaración: esta versión tiene contenido de clases posteriores</li>
+                            </ul>
+                        </dd>
+
+                        <dt id="casino">
+                            <img class="icono" src="img/casino.png" alt="Casino">
+                            <a href="html/casino/" target="_blank">Casino</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>Clase 3 - Prompt, confirm, alert y Math.random()</li>
+                            </ul>
+                        </dd>
+
+                        <dt id="tema-oscuro">
+                            <img class="icono" src="img/gato.png" alt="Gato">
+                            <a href="html/tema-oscuro/" target="_blank"> Tema oscuro</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>Clase 5 - Modificando estilos con JS.</li>
+                                <li>Clase 6 - Usando templates.</li>
+                            </ul>
+                        </dd>
+
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="apuntes">
+            <h2><i class="fas fa-book"></i> Apuntes</h2>
+            <div class="flex-container">
+                <div class="fila">
+                    <dl>
+                        <dt id="modulo-1">
+                            <i class="fas fa-pencil-alt icono"></i>
+                            <a href="html/apuntes/modulo1.html" target="_blank">Módulo 1 - Introducción a la materia</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>Manipulando datos</li>
+                                <li>Math</li>
+                                <li>Bucles específicos</li>
+                            </ul>
+                        </dd>
+
+                        <dt id="modulo-2">
+                            <i class="fas fa-pencil-alt icono"></i>
+                            <a href="html/apuntes/modulo2.html" target="_blank">Módulo 2 - Manipulación del DOM</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>Window vs Document</li>
+                                <li>Selectores del DOM</li>
+                                <li>Modificando el DOM</li>
+                                <li>Trabajando con nodos</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados a Valentina Varela Rodriguez ©</p>
+    </footer>
+</body>
+</html>

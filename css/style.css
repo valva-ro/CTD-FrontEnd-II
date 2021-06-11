@@ -1,0 +1,145 @@
+@import url("./navbar.css");
+@import url("./hero.css");
+@import url("./description-list.css");
+
+:root {
+    --primary: #7e62e4;
+    --secondary: #1b1b1b;
+    --accent: #69e5d0;
+    --background: #111111;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-padding-top: 120px;
+}
+
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: var(--background);
+}
+
+h2 {
+    background-color: var(--accent);
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+h2 i {
+    padding: 1.5vw;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+section div.fila {
+    width: 50vw;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: all .5s;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+footer {
+    background-color: var(--primary);
+}
+
+footer p {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    dl dd {
+        margin-left: 15%;
+    }
+
+    section div.fila {
+        width: 80vw;
+    }
+
+    header nav ul#menu {
+        position: fixed;
+        left: 0;
+        top: -100%;
+        flex-direction: column;
+        background-color: var(--primary);
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+        transition: 0.3s;
+    }
+
+    header nav ul#menu li a:hover {
+        color: var(--primary);
+    }
+    
+    header nav ul#menu>li>ul>li>a {
+        color: var(--accent);
+    }
+    
+    header nav ul#menu>li>ul>li>a:hover {
+        color: var(--secondary);
+    }
+
+    header a#hamburger {
+        display: inline-block;
+    }
+
+    header nav ul#menu.active {
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    dl dt {
+        margin-top: 20%;
+    }
+
+    .icono {
+        width: 20%;
+    }
+
+    .hero div {
+        width: 80vw;;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .full {
+        display: none;
+    }
+    
+    .not-full {
+        display: block;
+    }
+
+    dl:last-child {
+        margin-bottom: 25%;
+    }
+    
+    dl:first-child {
+        margin-top: 25%;
+    }
+}
