@@ -41,7 +41,7 @@ function mostrarNoticias(links, claseTipoNacional) {
 }
 
 function cargarNoticias() {
-    fetch("./../noticias.json")
+    fetch("https://raw.githubusercontent.com/valva-ro/CTD-FrontEnd-II/main/html/noticias/noticias.json")
         .then(respuesta => respuesta.json())
         .then(noticias => {
             noticias.forEach((noticia, i) => {
