@@ -1,0 +1,32 @@
+/* section */
+section {
+    &.hero {
+        @include flex();
+        position: relative;
+        margin-bottom: 100px;
+        background-image: linear-gradient(to bottom, rgba(63, 63, 63, 0.212), rgba(17, 17, 17, 0.616)), url("./../img/hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        a {
+            background-color: black;
+            border-radius: 50px;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            color: $blanco;
+            font-size: 24px;
+            padding: 19px;
+            text-align: center;
+            width: 200px;
+            position: absolute;
+            top: 20px;
+            right: 12px;
+            &:hover{
+                background-color: $gris-oscuro;
+            }
+        }
+        h2 {
+            font-size: 70px;
+            color: $blanco;
+        }
+    }
+}

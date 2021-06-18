@@ -1,0 +1,55 @@
+/* header */
+header {
+    @include flex(space-between);
+    background-color: $blanco;
+    padding: 15px 25px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    a {
+        @include flex(center, center, row, 10px);
+        img {
+            width: 80px;
+        }
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: $celeste;
+    }
+    
+    li>a {
+        font-size: 24px;
+        color: $celeste;
+        padding: 10px;
+        &.seleccionado {
+            border-radius: 10px;
+            color: $blanco;
+        }
+        &#linkNoticiasNacionales {
+            &:hover {
+                color: $rojo;
+            }
+            &.seleccionado {
+                background-color: $rojo;
+                &:hover {
+                    color: $gris-claro;
+                }
+            }
+        }
+        &#linkNoticiasInternacionales {
+            &:hover {
+                color: $amarillo;
+            }
+            &.seleccionado {
+                background-color: $amarillo;
+                &:hover {
+                    color: $gris-claro;
+                }
+            }
+        }
+    }
+    
+    ul {
+        @include flex(center, center, row, 20px);
+    }
+}

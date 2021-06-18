@@ -1,0 +1,44 @@
+body.dark {
+
+    &::-webkit-scrollbar-track {
+        background-color: $gris-oscuro;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: $amarillo;
+    }
+
+    header {
+        background-color: $gris-claro;
+        h1, li>a {
+            color: $amarillo;
+        }
+    }
+
+    main {
+        background-color: $gris-claro;
+    }
+
+    section {
+        &.hero h2 {
+            color: #d3d3d3;
+        }
+        a {
+            background-color: $blanco;
+            color: black;
+            &:hover{
+                background-color: $gris-claro;
+            }
+        }
+    }
+
+    article {
+        .bottomNoticia {
+            background-color: $gris-oscuro;
+            color: $blanco;
+            .fechaNoticia {
+                color: $blanco;
+            }
+        }
+    }
+}
